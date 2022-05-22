@@ -6,20 +6,27 @@ import { TopCoursesComponent } from './top-courses/top-courses.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { BecomeInstructorComponent } from './become-instructor/become-instructor.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomepageComponent } from './homepage.component';
+import { StatsComponent } from './stats/stats.component';
 
 
 
 @NgModule({
-  declarations: [
-    NavbarComponent,
-    HeroSectionComponent,
-    TopCoursesComponent,
-    TestimonialsComponent,
-    BecomeInstructorComponent,
-    FooterComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [
+        NavbarComponent,
+        HeroSectionComponent,
+        TopCoursesComponent,
+        TestimonialsComponent,
+        BecomeInstructorComponent,
+        FooterComponent,
+        HomepageComponent,
+        StatsComponent
+    ],
+    exports: [
+        HeroSectionComponent
+    ],
+    imports: [
+        CommonModule
+    ]
 })
 export class HomepageModule { }
