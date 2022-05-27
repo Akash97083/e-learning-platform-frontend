@@ -8,6 +8,7 @@ import { BecomeInstructorComponent } from './become-instructor/become-instructor
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage.component';
 import { StatsComponent } from './stats/stats.component';
+import {RouterModule} from "@angular/router";
 
 
 
@@ -25,8 +26,9 @@ import { StatsComponent } from './stats/stats.component';
     exports: [
         HeroSectionComponent
     ],
-    imports: [
-        CommonModule
-    ]
+  imports: [
+    CommonModule,
+    RouterModule
+  ]
 })
 export class HomepageModule { }
