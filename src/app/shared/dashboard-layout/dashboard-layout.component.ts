@@ -7,7 +7,10 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class DashboardLayoutComponent implements OnInit {
   @Input() sideBarItems:any = [];
+  @Input() userMenuItems:any = [];
 
+  @Input() userAvatar:string = '';
+  userMenuOpen = false;
   constructor() { }
 
   ngOnInit(): void {

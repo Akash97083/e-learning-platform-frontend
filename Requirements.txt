@@ -1,0 +1,119 @@
+## Admin Dashboard
+	1. Login/Register
+	2. Home (stats)
+		* Courses Count
+		* Instructors Count
+		* Students Count
+		* Earnings (Last Year)
+		* Top Selling Instructors
+		* Top Selling Courses
+		* Top Students
+		
+	3. Categories: (Each Category contain sub - categories)
+		* View
+		* Create
+		* Update
+		* Delete (only if empty)
+
+	4. Courses:
+		* Courses Needs Approval
+		* View All Courses on website (Paginated)
+			order by:
+				Popularity
+				Rating
+				Price
+
+			Filter By: 
+				Category
+				Instructor
+				Price Range:
+					Less then 9.99$
+					10$- 19.99$
+					20$- 19.99$
+					30$- 19.99$
+					More then 40$
+		* Stop New Subcriptions
+	
+	5. Instructors
+		* Lock/Unlock Account
+		* View All Information
+		* View Feedbacks & Reports
+		* Send Message (optinal)
+	6. Students
+		* Lock/Unlock Account
+		* View All Information
+		* View Courses
+		* Send Message (optinal)
+	7. Website Settings
+		* Website Name
+		* Website Logo
+		* Change Slogan
+		* Purchases Commision Percentage
+		* Featured Courses in homepage
+		* Stop Website For Mentainance (optional)
+	
+## Instructor Dashboard
+	1. Login/Register
+		-Fullname
+		-email
+		-phone
+		-country
+		-password
+		
+	2. Home (stats)
+		* Courses Count
+		* Students Count
+		* Earnings (Last Year)
+		* Top Selling Courses
+
+	3. Courses
+		* View
+		* Create (autosave changes)
+			- Multiple Steps
+				* Course Details
+					* Basic Information
+						- Title
+						- Image
+						- Introduction Video
+						- Rating
+						- Duration
+						- Category
+						- Prerequisites
+						- Level: (Entry -  Intermediate -  Advanced)
+						- Description
+						- Price
+					* Course Content
+						Capters >> Lessons
+							* Each Lesson Contains:
+								* Title
+								* Video( Youtube Link )
+								* Description
+								* Questions (MCQ -  Matching(optional) )
+						Final Exam for the course
+		* Update
+		* Delete (if someone took it, then archive it)
+	4. Chat with video meetings 
+	5. Sellings (Earnings) 
+		- Withdraw
+			- Bank Account
+			- Stripe
+			
+	6. Account Settings
+
+## Student Dashboard (Without sidebar --  only navbar)
+	1. Login/Register
+	2. Buy Course
+	3. Attend Course (Active time must be monitored)
+	4. Generate Certificate
+	5. My Courses
+		- Chat With Instructor
+	6. Account Settings
+
+
+## Schemas
+	- Students
+	- Instructors
+	- Courses
+	- Categories
+	- AppSettings
+	

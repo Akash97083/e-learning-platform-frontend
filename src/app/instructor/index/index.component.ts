@@ -38,6 +38,16 @@ export class IndexComponent implements OnInit {
       route: '/instructor/settings',
     },
   ];
+  userMenuItems = [
+    {
+      name: 'Profile',
+      route: '/instructor/profile',
+    },
+    {
+      name: 'Profile',
+      route: '/instructor/logout',
+    },
+  ];
 
   constructor() { }
 

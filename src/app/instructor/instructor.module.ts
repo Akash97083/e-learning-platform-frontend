@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { IndexComponent } from './index/index.component';
 import {SharedModule} from "../shared/shared.module";
 import {InstructorRoutingModule} from "./instructor-routing.module";
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import {InstructorRoutingModule} from "./instructor-routing.module";
     InstructorRoutingModule,
     CommonModule,
     SharedModule,
+    NgChartsModule
   ]
 })
 export class InstructorModule { }
