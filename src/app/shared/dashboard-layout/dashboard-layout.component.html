@@ -51,10 +51,10 @@
                    tabindex="-1"
                    [ngClass]="userMenuOpen ? 'block' : 'hidden'"
               >
-                <!-- Active: "bg-gray-100", Not Active: "" -->
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+                <a *ngFor="let el of userMenuItems" [href]="el.route" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1" id="user-menu-item-0">
+                  {{el.name}}
+                </a>
 
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Sign out</a>
               </div>
             </div>
           </div>

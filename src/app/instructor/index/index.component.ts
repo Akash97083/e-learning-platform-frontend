@@ -44,7 +44,7 @@ export class IndexComponent implements OnInit {
       route: '/instructor/profile',
     },
     {
-      name: 'Profile',
+      name: 'Logout',
       route: '/instructor/logout',
     },
   ];
