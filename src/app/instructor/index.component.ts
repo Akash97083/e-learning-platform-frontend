@@ -3,12 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-instructor-index',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css'],
 })
 export class IndexComponent implements OnInit {
   sideBarItems = [
     {
-      name: 'Dashboard',
+      name: 'Overview',
       icon: 'fa fa-tachometer',
       route: '/instructor',
     },
@@ -18,19 +17,14 @@ export class IndexComponent implements OnInit {
       route: '/instructor/courses',
     },
     {
-      name: 'Students',
-      icon: 'fa fa-users',
-      route: '/instructor/courses',
+      name: 'Chat',
+      icon: 'fa fa-message',
+      route: '/instructor/chat',
     },
     {
-      name: 'Assignments',
-      icon: 'fa fa-file-text',
-      route: '/instructor/courses',
-    },
-    {
-      name: 'Grades',
-      icon: 'fa fa-graduation-cap',
-      route: '/instructor/courses',
+      name: 'Earnings',
+      icon: 'fa fa-money-bill-alt',
+      route: '/instructor/earnings',
     },
     {
       name: 'Settings',

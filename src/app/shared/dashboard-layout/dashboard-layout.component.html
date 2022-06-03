@@ -6,7 +6,7 @@
         <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="Workflow">
       </div>
       <div class="flex-1 mt-6 w-full px-2 space-y-1">
-        <a *ngFor="let element of sideBarItems" [routerLink]="element.route" routerLinkActive="bg-indigo-800 text-white" class="text-indigo-100 hover:bg-indigo-800 hover:text-white group w-full p-3 rounded-md flex flex-col items-center text-xs font-medium">
+        <a *ngFor="let element of sideBarItems" [routerLink]="element.route" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="bg-indigo-800 text-white" class="text-indigo-100 hover:bg-indigo-800 hover:text-white group w-full p-3 rounded-md flex flex-col items-center text-xs font-medium">
           <!-- Heroicon name: outline/view-grid -->
           <i class="{{element.icon}} group-hover:text-white fa-2x"></i>
           <span class="mt-2">{{element.name}}</span>
