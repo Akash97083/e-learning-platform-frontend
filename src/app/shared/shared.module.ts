@@ -4,6 +4,7 @@ import { DashboardLayoutComponent } from './dashboard-layout/dashboard-layout.co
 import {RouterModule} from "@angular/router";
 import { StatsCardComponent } from './stats-card/stats-card.component';
 import { AbsPipe } from './abs.pipe';
+import { CourseCardComponent } from './course-card/course-card.component';
 
 
 
@@ -11,11 +12,13 @@ import { AbsPipe } from './abs.pipe';
   declarations: [
     DashboardLayoutComponent,
     StatsCardComponent,
-    AbsPipe
+    AbsPipe,
+    CourseCardComponent
   ],
   exports: [
     DashboardLayoutComponent,
-    StatsCardComponent
+    StatsCardComponent,
+    CourseCardComponent
   ],
   imports: [
     CommonModule,

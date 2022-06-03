@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage.component';
 import { StatsComponent } from './stats/stats.component';
 import {RouterModule} from "@angular/router";
+import {SharedModule} from "../shared/shared.module";
 
 
 
@@ -26,9 +27,10 @@ import {RouterModule} from "@angular/router";
     exports: [
         HeroSectionComponent
     ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ]
+    imports: [
+        CommonModule,
+        RouterModule,
+        SharedModule
+    ]
 })
 export class HomepageModule { }
