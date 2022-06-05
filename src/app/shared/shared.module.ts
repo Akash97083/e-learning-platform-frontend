@@ -5,6 +5,10 @@ import {RouterModule} from "@angular/router";
 import { StatsCardComponent } from './stats-card/stats-card.component';
 import { AbsPipe } from './abs.pipe';
 import { CourseCardComponent } from './course-card/course-card.component';
+import { VideoPlayerComponent } from './chat/video-player/video-player.component';
+import {ChatModule} from "./chat/chat.module";
+import {FormsModule} from "@angular/forms";
+import { InputErrorsComponent } from './input-errors/input-errors.component';
 
 
 
@@ -13,16 +17,20 @@ import { CourseCardComponent } from './course-card/course-card.component';
     DashboardLayoutComponent,
     StatsCardComponent,
     AbsPipe,
-    CourseCardComponent
+    CourseCardComponent,
+    InputErrorsComponent,
   ],
   exports: [
     DashboardLayoutComponent,
     StatsCardComponent,
-    CourseCardComponent
+    CourseCardComponent,
+    InputErrorsComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ChatModule,
+    FormsModule
   ]
 })
 export class SharedModule { }

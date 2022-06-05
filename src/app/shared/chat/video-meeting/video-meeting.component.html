@@ -1,0 +1,31 @@
+<div class="h-[100vh] grid grid-cols-12 grid-rows-6">
+  <div class="col-start-1 row-start-1 row-span-1 col-span-9 p-10">
+    <p class="text-4xl">Angular Course</p>
+
+  </div>
+
+  <div class="col-start-1 col-span-9 row-span-5 row-start-2 px-5">
+      <app-video-player [stream]="partner.stream" *ngIf="partner"></app-video-player>
+  </div>
+  <div class="col-start-1 row-start-6 row-span-1 col-span-9">
+    controls
+  </div>
+
+  <div class="col-start-10 col-span-3 row-start-1 row-span-6">
+      <app-chat-widget></app-chat-widget>
+  </div>
+</div>
+<!--<div class="col-start-5 row-start-3 h-full w-full">-->
+<!--  <app-video-player *ngIf="localStream" [mode]="'owner'" [stream]="localStream" class="my-video"></app-video-player>-->
+<!--</div>-->
+
+<!--<div class="relative flex items-center justify-center h-screen mb-12 overflow-hidden">-->
+<!--  <div class="w-[20rem] h-[20rem] fixed bottom-0 right-0 z-50">-->
+<!--  </div>-->
+<!--  <div class="h-max">-->
+<!--    -->
+<!--    <div class="w-full  bg-gray-500 flex items-center justify-center text-white" *ngIf="!partner">-->
+<!--      <span class="text-4xl">Waiting For Partner</span>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->

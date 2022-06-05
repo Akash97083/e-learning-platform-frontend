@@ -11,7 +11,7 @@ import {CreateComponent} from "./courses/create/create.component";
 import {EarningsComponent} from "./earnings/earnings.component";
 import {WithdrawComponent} from "./earnings/withdraw/withdraw.component";
 import {SettingsComponent} from "./settings/settings.component";
-import {ChatComponent} from "./chat/chat.component";
+import {VideoMeetingComponent} from "../shared/chat/video-meeting/video-meeting.component";
 
 const routes: Routes = [
   {
@@ -19,13 +19,14 @@ const routes: Routes = [
     component: LoginComponent,
   },
   {
-    path: 'Register',
+    path: 'register',
     component: RegisterComponent,
   },
   {
     path: '',
     component: IndexComponent,
     children: [
+      { path: 'chat', component: VideoMeetingComponent },
       {
         path: '',
         component: HomeComponent,
@@ -42,10 +43,6 @@ const routes: Routes = [
             component: WithdrawComponent,
           }
         ]
-      },
-      {
-        path: 'chat',
-        component: ChatComponent,
       },
       {
         path: 'settings',

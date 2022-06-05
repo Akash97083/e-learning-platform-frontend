@@ -13,8 +13,10 @@ import {WithdrawComponent} from "./earnings/withdraw/withdraw.component";
 import {SettingsComponent} from "./settings/settings.component";
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
-import {ChatComponent} from "./chat/chat.component";
-
+import {ChatComponent} from "../shared/chat/chat/chat.component";
+import {CourseService} from "./services/course.service";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {FormsModule, NgForm, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,20 @@ import {ChatComponent} from "./chat/chat.component";
     SettingsComponent,
     LoginComponent,
     RegisterComponent,
-    ChatComponent
+    ChatComponent,
   ],
-  imports: [
-    InstructorRoutingModule,
-    CommonModule,
-    SharedModule,
-    NgChartsModule
-  ]
+    imports: [
+        InstructorRoutingModule,
+        CommonModule,
+        SharedModule,
+        NgChartsModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+    ],
+  providers: [
+    CourseService,
+    HttpClient,
+   ]
 })
 export class InstructorModule { }

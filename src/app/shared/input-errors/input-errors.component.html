@@ -1,0 +1,20 @@
+<div *ngIf="fieldData.invalid && (fieldData.dirty || fieldData.touched)" class="alert">
+  <p *ngIf="fieldData.errors?.['required']" class="mt-2 text-sm text-red-600">
+    {{fieldName}} is required.
+  </p>
+  <p *ngIf="fieldData.errors?.['minlength']" class="mt-2 text-sm text-red-600">
+    {{fieldName}} is too short.
+  </p>
+  <p *ngIf="fieldData.errors?.['maxlength']" class="mt-2 text-sm text-red-600">
+    {{fieldName}} is too long.
+  </p>
+  <p *ngIf="fieldData.errors?.['email']" class="mt-2 text-sm text-red-600">
+    {{fieldName}} is not valid.
+  </p>
+  <p *ngIf="fieldData.errors?.['passwordStrength']" class="mt-2 text-sm text-red-600">
+    {{fieldName}} is too weak.
+  </p>
+  <p *ngIf="fieldData.errors?.['notSame']" class="mt-2 text-sm text-red-600">
+    {{fieldName}} Doesn't Match.
+  </p>
+</div>

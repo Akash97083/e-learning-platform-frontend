@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiURL: 'http://localhost:3000',
+  VIDEOSDK_API_KEY: '2494fe52-76cb-4db5-83c8-853c752d7075',
 };
 
 /*
