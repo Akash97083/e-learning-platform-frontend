@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import countriesList from '../../shared/Utils/countriesList';
-import {AbstractControl, FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators} from "@angular/forms";
+import {AbstractControl, UntypedFormControl, UntypedFormGroup, ValidationErrors, ValidatorFn, Validators} from "@angular/forms";
 import {CustomValidators} from "../../shared/custom-validators";
 @Component({
   selector: 'app-register',
@@ -9,15 +9,15 @@ import {CustomValidators} from "../../shared/custom-validators";
 })
 export class RegisterComponent implements OnInit {
   countriesList = countriesList;
-  registerForm: FormGroup;
+  registerForm: UntypedFormGroup;
   constructor() {
-    this.registerForm = new FormGroup({
-      fullName: new FormControl('', [Validators.required,Validators.minLength(8),Validators.maxLength(20)]),
-      email: new FormControl('',[Validators.required,Validators.email]),
-      password: new FormControl('',[Validators.required,Validators.minLength(8),Validators.maxLength(30)]),
-      passwordConfirmation: new FormControl('',this.checkPasswordMatch()),
-      country: new FormControl('Egypt'),
-      phone: new FormControl('',[Validators.required,Validators.minLength(10),Validators.maxLength(13)])
+    this.registerForm = new UntypedFormGroup({
+      fullName: new UntypedFormControl('', [Validators.required,Validators.minLength(8),Validators.maxLength(20)]),
+      email: new UntypedFormControl('',[Validators.required,Validators.email]),
+      password: new UntypedFormControl('',[Validators.required,Validators.minLength(8),Validators.maxLength(30)]),
+      passwordConfirmation: new UntypedFormControl('',this.checkPasswordMatch()),
+      country: new UntypedFormControl('Egypt'),
+      phone: new UntypedFormControl('',[Validators.required,Validators.minLength(10),Validators.maxLength(13)])
     })
   }
   get fullName() { return this.registerForm.get('fullName'); }
