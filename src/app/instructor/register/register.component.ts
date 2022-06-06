@@ -18,8 +18,7 @@ export class RegisterComponent implements OnInit {
       passwordConfirmation: new FormControl('',this.checkPasswordMatch()),
       country: new FormControl('Egypt'),
       phone: new FormControl('',[Validators.required,Validators.minLength(10),Validators.maxLength(13)])
-    }
-    )
+    })
   }
   get fullName() { return this.registerForm.get('fullName'); }
   get email() { return this.registerForm.get('email'); }
