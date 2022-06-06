@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from './navbar/navbar.component';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { TopCoursesComponent } from './top-courses/top-courses.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
@@ -15,7 +14,6 @@ import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
     declarations: [
-        NavbarComponent,
         HeroSectionComponent,
         TopCoursesComponent,
         TestimonialsComponent,

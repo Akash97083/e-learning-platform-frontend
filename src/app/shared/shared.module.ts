@@ -9,6 +9,7 @@ import { VideoPlayerComponent } from './chat/video-player/video-player.component
 import {ChatModule} from "./chat/chat.module";
 import {FormsModule} from "@angular/forms";
 import { InputErrorsComponent } from './input-errors/input-errors.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -19,12 +20,14 @@ import { InputErrorsComponent } from './input-errors/input-errors.component';
     AbsPipe,
     CourseCardComponent,
     InputErrorsComponent,
+    NavbarComponent,
   ],
   exports: [
     DashboardLayoutComponent,
     StatsCardComponent,
     CourseCardComponent,
     InputErrorsComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
