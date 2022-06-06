@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import {HomepageModule} from "./homepage/homepage.module";
 import { CoursesModule } from './courses/courses.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MessageService} from "primeng/api";
+import {ToastModule} from "primeng/toast";
 
 @NgModule({
   declarations: [
@@ -16,9 +19,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppRoutingModule,
     HomepageModule,
     CoursesModule,
-    FontAwesomeModule
-
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    ToastModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [MessageService]
 })
 export class AppModule { }

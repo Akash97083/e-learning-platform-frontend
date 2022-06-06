@@ -24,6 +24,8 @@ import { ContentFormComponent } from './courses/components/content-form/content-
 import { DescriptionFormComponent } from './courses/components/description-form/description-form.component';
 import {AngularEditorModule} from "@kolkov/angular-editor";
 import {TableModule} from "primeng/table";
+import {EditorModule} from "primeng/editor";
+import {DropdownModule} from "primeng/dropdown";
 
 @NgModule({
   declarations: [
@@ -44,17 +46,19 @@ import {TableModule} from "primeng/table";
     ContentFormComponent,
     DescriptionFormComponent
   ],
-  imports: [
-    InstructorRoutingModule,
-    CommonModule,
-    SharedModule,
-    NgChartsModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
-    AngularEditorModule,
-    TableModule,
-  ],
+    imports: [
+        InstructorRoutingModule,
+        CommonModule,
+        SharedModule,
+        NgChartsModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+        AngularEditorModule,
+        TableModule,
+        EditorModule,
+      DropdownModule
+    ],
   providers: [
     CourseService,
     HttpClient,
