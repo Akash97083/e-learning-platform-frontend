@@ -23,6 +23,7 @@ import { PricingFormComponent } from './courses/components/pricing-form/pricing-
 import { ContentFormComponent } from './courses/components/content-form/content-form.component';
 import { DescriptionFormComponent } from './courses/components/description-form/description-form.component';
 import {AngularEditorModule} from "@kolkov/angular-editor";
+import {TableModule} from "primeng/table";
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import {AngularEditorModule} from "@kolkov/angular-editor";
     FormsModule,
     ReactiveFormsModule,
     AngularEditorModule,
+    TableModule,
   ],
   providers: [
     CourseService,
