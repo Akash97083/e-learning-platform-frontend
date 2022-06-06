@@ -56,16 +56,16 @@ const routes: Routes = [
             component: ListComponent,
           },
           {
+            path: 'create',
+            component: CreateComponent,
+          },
+          {
             path: ':id',
             component: ViewComponent,
           },
           {
             path: ':id/edit',
             component: UpdateComponent,
-          },
-          {
-            path: 'create',
-            component: CreateComponent,
           },
         ]
       }

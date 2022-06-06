@@ -17,6 +17,12 @@ import {ChatComponent} from "../shared/chat/chat/chat.component";
 import {CourseService} from "./services/course.service";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {FormsModule, NgForm, ReactiveFormsModule} from '@angular/forms';
+import {CreateComponent} from "./courses/create/create.component";
+import { BasicInfoFormComponent } from './courses/components/basic-info-form/basic-info-form.component';
+import { PricingFormComponent } from './courses/components/pricing-form/pricing-form.component';
+import { ContentFormComponent } from './courses/components/content-form/content-form.component';
+import { DescriptionFormComponent } from './courses/components/description-form/description-form.component';
+import {AngularEditorModule} from "@kolkov/angular-editor";
 
 @NgModule({
   declarations: [
@@ -31,16 +37,22 @@ import {FormsModule, NgForm, ReactiveFormsModule} from '@angular/forms';
     LoginComponent,
     RegisterComponent,
     ChatComponent,
+    CreateComponent,
+    BasicInfoFormComponent,
+    PricingFormComponent,
+    ContentFormComponent,
+    DescriptionFormComponent
   ],
-    imports: [
-        InstructorRoutingModule,
-        CommonModule,
-        SharedModule,
-        NgChartsModule,
-        HttpClientModule,
-        FormsModule,
-        ReactiveFormsModule,
-    ],
+  imports: [
+    InstructorRoutingModule,
+    CommonModule,
+    SharedModule,
+    NgChartsModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AngularEditorModule,
+  ],
   providers: [
     CourseService,
     HttpClient,
