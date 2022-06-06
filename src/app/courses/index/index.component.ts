@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  constructor() { }
+  // myCourses: Course[] = [];
+  constructor(/* public courseService: CourseService */) {
+    // this.courseService.all().subscribe(
+    //   (data)=>{
+    //     this.myCourses=data;
+    //   }
+    // )
+  }
 
   ngOnInit(): void {
   }
