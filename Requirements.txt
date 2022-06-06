@@ -8,7 +8,7 @@
 		* Top Selling Instructors
 		* Top Selling Courses
 		* Top Students
-		
+
 	3. Categories: (Each Category contain sub - categories)
 		* View
 		* Create
@@ -23,7 +23,7 @@
 				Rating
 				Price
 
-			Filter By: 
+			Filter By:
 				Category
 				Instructor
 				Price Range:
@@ -33,7 +33,7 @@
 					30$- 19.99$
 					More then 40$
 		* Stop New Subcriptions
-	
+
 	5. Instructors
 		* Lock/Unlock Account
 		* View All Information
@@ -51,7 +51,7 @@
 		* Purchases Commision Percentage
 		* Featured Courses in homepage
 		* Stop Website For Mentainance (optional)
-	
+
 ## Instructor Dashboard
 	1. Login/Register
 		-Fullname
@@ -59,7 +59,7 @@
 		-phone
 		-country
 		-password
-		
+
 	2. Home (stats)
 		* Courses Count
 		* Students Count
@@ -73,8 +73,8 @@
 				* Course Details
 					* Basic Information
 						- Title
+						- Category
 						- Image
-						- Introduction Video
 						- Rating
 						- Duration
 						- Category
@@ -92,12 +92,12 @@
 						Final Exam for the course
 		* Update
 		* Delete (if someone took it, then archive it)
-	4. Chat with video meetings 
-	5. Sellings (Earnings) 
+	4. Chat with video meetings
+	5. Sellings (Earnings)
 		- Withdraw
 			- Bank Account
 			- Stripe
-			
+
 	6. Account Settings
 
 ## Student Dashboard (Without sidebar --  only navbar)
@@ -116,4 +116,3 @@
 	- Courses
 	- Categories
 	- AppSettings
-	

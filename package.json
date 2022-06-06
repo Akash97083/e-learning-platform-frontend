@@ -35,6 +35,8 @@
     "ngx-quill": "^17.0.0",
     "orderedmap": "^1.1.8",
     "peerjs": "^1.4.6",
+    "primeicons": "^5.0.0",
+    "primeng": "^13.4.1",
     "rxjs": "~7.5.0",
     "socket.io-client": "^4.5.1",
     "tslib": "^2.3.0",
